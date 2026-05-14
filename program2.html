@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QCCC 2026 – Schedule</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Fallback styles — override freely in your style.css */
+    body { font-family: Arial, sans-serif; padding: 2rem; background: #fff; color: #111; }
+    h1 { text-align: center; margin-bottom: 1.5rem; }
+
+    .legend { display: flex; gap: 1.5rem; justify-content: center; margin-bottom: 1.5rem; font-size: 0.85rem; }
+    .legend-item { display: flex; align-items: center; gap: 0.4rem; }
+    .legend-swatch { width: 18px; height: 18px; border-radius: 3px; display: inline-block; }
+
+    table { border-collapse: collapse; width: 100%; font-size: 0.82rem; }
+    th, td { border: 1px solid #ccc; padding: 6px 8px; vertical-align: top; text-align: left; }
+    th { background: #f0f0f0; text-align: center; }
+
+    .time { white-space: nowrap; color: #555; font-size: 0.78rem; }
+
+    /* Event type colours */
+    .invited   { background: #fff8f0; }
+    .contributed { background: #e8f4fb; color: #1a5a8a; font-style: italic; }
+    .break-coffee { background: #fde8d8; text-align: center; color: #7a3a00; }
+    .break-lunch  { background: #daeaf5; text-align: center; color: #1a4a6a; }
+    .special  { background: #d5e8d4; font-weight: bold; }
+    .dinner   { background: #d5e8d4; text-align: center; font-weight: bold; }
+    .admin    { background: #f5f5f5; color: #555; }
+
+    td.speaker { font-weight: 500; }
+  </style>
+</head>
+<body>
+
+<h1>QCCC 2026 – Conference Schedule</h1>
+
+<div class="legend">
+  <span class="legend-item"><span class="legend-swatch" style="background:#fff8f0;border:1px solid #ccc;"></span> Invited Talk (45'+5')</span>
+  <span class="legend-item"><span class="legend-swatch" style="background:#e8f4fb;border:1px solid #ccc;"></span> Contributed Talk (25'+5')</span>
+  <span class="legend-item"><span class="legend-swatch" style="background:#fde8d8;border:1px solid #ccc;"></span> Coffee Break</span>
+  <span class="legend-item"><span class="legend-swatch" style="background:#daeaf5;border:1px solid #ccc;"></span> Lunch Break</span>
+  <span class="legend-item"><span class="legend-swatch" style="background:#d5e8d4;border:1px solid #ccc;"></span> Special Event</span>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>MON 18</th>
+      <th>Time</th>
+      <th>TUE 19</th>
+      <th>Time</th>
+      <th>WED 20</th>
+      <th>Time</th>
+      <th>THU 21</th>
+      <th>Time</th>
+      <th>FRI 22</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- 08:30 -->
+    <tr>
+      <td class="time">08:30–09:15</td>
+      <td class="admin">Badges</td>
+      <td></td><td></td>
+      <td></td><td></td>
+      <td></td><td></td>
+      <td></td><td></td>
+    </tr>
+
+    <!-- 09:00 / 09:15 row -->
+    <tr>
+      <td class="time">09:15–09:30</td>
+      <td class="admin">Welcome</td>
+      <td class="time">09:00–09:50</td>
+      <td class="invited speaker">Marek Rams</td>
+      <td class="time">09:00–09:50</td>
+      <td class="invited speaker">Lea F. Santos</td>
+      <td class="time">09:00–09:50</td>
+      <td class="invited speaker">Takuya Hatomura</td>
+      <td class="time">09:00–09:50</td>
+      <td class="invited speaker">Yue Ban</td>
+    </tr>
+
+    <!-- 09:30 / 09:50 -->
+    <tr>
+      <td class="time">09:30–10:20</td>
+      <td class="invited speaker">Kazuki Ikeda</td>
+      <td class="time">09:50–10:20</td>
+      <td class="contributed speaker">Julián Ferreiro-Vélez</td>
+      <td class="time">09:50–10:20</td>
+      <td class="contributed speaker">Eliott Z. Mamon</td>
+      <td class="time">09:50–10:20</td>
+      <td class="contributed speaker">Niklas Hörnedal</td>
+      <td class="time">09:50–10:20</td>
+      <td class="contributed speaker">Augustine Kshetrimayum</td>
+    </tr>
+
+    <!-- Coffee -->
+    <tr>
+      <td class="time">10:20–10:50</td>
+      <td class="break-coffee">☕ Coffee Break</td>
+      <td class="time">10:20–10:50</td>
+      <td class="break-coffee">☕ Coffee Break</td>
+      <td class="time">10:20–10:50</td>
+      <td class="break-coffee">☕ Coffee Break</td>
+      <td class="time">10:20–10:50</td>
+      <td class="break-coffee">☕ Coffee Break</td>
+      <td class="time">10:20–10:50</td>
+      <td class="break-coffee">☕ Coffee Break</td>
+    </tr>
+
+    <!-- 10:50 -->
+    <tr>
+      <td class="time">10:50–11:40</td>
+      <td class="invited speaker">Andrew Jordan</td>
+      <td class="time">10:50–11:40</td>
+      <td class="invited speaker">Alioscia Hamma</td>
+      <td class="time">10:50–11:40</td>
+      <td class="invited speaker">Luis P. García-Pintos</td>
+      <td class="time">10:50–11:40</td>
+      <td class="invited speaker">Paolo Zanardi</td>
+      <td class="time" rowspan="2">10:50–12:30</td>
+      <td class="special" rowspan="2">🗣 Panel Discussion</td>
+    </tr>
+
+    <!-- 11:40 -->
+    <tr>
+      <td class="time">11:40–12:30</td>
+      <td class="invited speaker">Mikel Sanz</td>
+      <td class="time">11:40–12:30</td>
+      <td class="invited speaker">Lincoln Carr</td>
+      <td class="time">11:40–12:30</td>
+      <td class="invited speaker">Anatoli Polkovnikov</td>
+      <td class="time">11:40–12:30</td>
+      <td class="invited speaker">Alejandro G. Cavidad</td>
+    </tr>
+
+    <!-- 12:30 -->
+    <tr>
+      <td class="time">12:30–13:00</td>
+      <td class="contributed speaker">Kousik Paul</td>
+      <td class="time">12:30–13:00</td>
+      <td class="contributed speaker">Simon Dengis</td>
+      <td class="time" rowspan="2">12:30–15:00</td>
+      <td class="break-lunch" rowspan="2">🍽 Lunch Break (Free)</td>
+      <td class="time">12:30–13:00</td>
+      <td class="contributed speaker">Jing Li</td>
+      <td class="time">12:30</td>
+      <td class="admin">Concluding Remarks</td>
+    </tr>
+
+    <!-- Lunch -->
+    <tr>
+      <td class="time">13:00–15:00</td>
+      <td class="break-lunch">🍽 Lunch Break (Free)</td>
+      <td class="time">13:00–15:00</td>
+      <td class="break-lunch">🍽 Lunch Break (Free)</td>
+      <td class="time">13:00–15:00</td>
+      <td class="break-lunch">🍽 Lunch Break (Free)</td>
+      <td></td><td></td>
+    </tr>
+
+    <!-- Afternoon -->
+    <tr>
+      <td class="time">15:00–15:50</td>
+      <td class="invited speaker">Xiaopeng Li</td>
+      <td class="time">15:00–15:50</td>
+      <td class="invited speaker">András Grabarits</td>
+      <td class="time" rowspan="2" style="vertical-align:middle;">—</td>
+      <td class="break-lunch" rowspan="2" style="vertical-align:middle; text-align:center; font-style:italic;">Free Afternoon</td>
+      <td class="time">15:00–15:50</td>
+      <td class="invited speaker">Pratik Nandy</td>
+      <td></td><td></td>
+    </tr>
+
+    <tr>
+      <td class="time">15:50–16:20</td>
+      <td class="contributed speaker">Loris M. Cangemi</td>
+      <td class="time">15:50–16:20</td>
+      <td class="contributed speaker">Gabriel Escrig</td>
+      <td class="time">15:50–16:20</td>
+      <td class="contributed speaker">Kasturi Swain</td>
+      <td></td><td></td>
+    </tr>
+
+    <!-- Evening coffee -->
+    <tr>
+      <td class="time">16:20–16:50</td>
+      <td class="break-coffee">☕ Coffee Break</td>
+      <td class="time">16:20–16:50</td>
+      <td class="break-coffee">☕ Coffee Break</td>
+      <td></td><td></td>
+      <td class="time">16:20–16:50</td>
+      <td class="break-coffee">☕ Coffee Break</td>
+      <td></td><td></td>
+    </tr>
+
+    <!-- Dinner -->
+    <tr>
+      <td></td><td></td>
+      <td></td><td></td>
+      <td></td><td></td>
+      <td class="time">20:00</td>
+      <td class="dinner">🍷 Dinner</td>
+      <td></td><td></td>
+    </tr>
+
+  </tbody>
+</table>
+
+</body>
+</html>

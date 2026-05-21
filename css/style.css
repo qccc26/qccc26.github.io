@@ -36,12 +36,13 @@
 main {
   padding-left: 2rem;
   padding-right: 2rem;
-    img {
+}
+
+main img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 1rem; /* replaces the <br> tags */
-    }
+    margin-bottom: 1rem;
 }
 
 body {
